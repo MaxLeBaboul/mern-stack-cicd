@@ -19,7 +19,7 @@ pids
 lib-cov
 
 # Coverage directory used by tools like istanbul
-coverage
+/coverage
 *.lcov
 
 # nyc test coverage
@@ -35,11 +35,12 @@ bower_components
 .lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
+/build/Release
 
 # Dependency directories
-backend/node_modules/
-frontend/node_modules/
+
+/node_modules/
+
 jspm_packages/
 
 # TypeScript v1 declaration files
