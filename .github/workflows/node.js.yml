@@ -16,8 +16,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{matrix.node-version}}
-      - run: cd backend
-      - run: npm i
-      - run: cd ../frontend
+
+      - run: cd frontend
       - run: npm i
       - run: npm run Build
