@@ -17,7 +17,9 @@ jobs:
         with:
           node-version: ${{matrix.node-version}}
       - run: cd backend
-      - run: npm i
+      - run: npm install rimraf -g
+      - run: rimraf node_modules
+      - run: npm install
       - run: cd ../frontend
-      - run: npm i
+      - run: npm install
       - run: npm run Build
